@@ -55,6 +55,16 @@
 
     </TableLayout>
 
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/biometricSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/table"
+        android:text="@string/enable_biometric_auth"
+        android:layout_centerHorizontal="true"
+        />
+
     <Button
         android:id="@+id/button_logout"
         android:layout_width="wrap_content"

@@ -37,7 +37,7 @@ class TokenAuthenticator @Inject constructor(
     private suspend fun getUpdatedToken(): DataResponse<TokenResponse> {
         val refreshToken = preferences.refreshToken.first()
         return safeApiCall {
-            tokenApi.refreshAccessToken(refreshToken)
+            tokenApi.refreshAccessToken(refreshToken.toString())
         }
     }
 }
